@@ -29,7 +29,7 @@ body{
 .mainGrid{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 400px auto auto auto;
+    grid-template-rows: 60vh auto auto auto;
     grid-gap: 0;
     grid-template-areas: 
     "hd"
@@ -60,7 +60,7 @@ body{
 .subtitle{
     font-size: 0.8rem;
     letter-spacing: 0.2rem;
-    margin: -42px 0 42px;
+    margin: 3vh 0 46px;
     overflow: hidden;
 }
 /*
@@ -182,7 +182,7 @@ body{
 .postContent{
     font-family: Tahoma,'Segoe UI', Geneva, Verdana, sans-serif;
     line-height: 36px;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: white;
 }
 .post{
