@@ -1,0 +1,242 @@
+html {
+    font-size: 8px;
+    width: 100vw;
+  }
+  @media(min-width: 320px) {
+    html {
+      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 22px;
+    }
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+body{
+    background-color: rgb(109, 109, 109);
+    color: white;
+}
+.mainGrid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px auto auto auto;
+    grid-gap: 0;
+    grid-template-areas: 
+    "hd"
+    "nv"
+    "fd"
+    "ft";
+}
+.header{
+    grid-area: hd;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: linear-gradient(rgba(3, 1, 119, 0.5), rgba(99, 0, 91, 0.5)),url('images/home_bg.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    color: white;
+    position: relative;
+}
+.title{
+    margin: 50px 0 -6px;
+    padding: 10px 0;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #fffb28;
+    letter-spacing: 0.4vw;
+}
+.subtitle{
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    margin: -42px 0 42px;
+    overflow: hidden;
+}
+/*
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 255, 234);
+}  
+.navitem {
+    float: left;
+} 
+.navitem a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }  
+.navitem a:hover{
+    background-color: rgb(0, 81, 105);
+    color:rgb(255, 255, 255);
+}
+*/
+.navContainer{
+    background-color: rgb(16, 247, 255);
+}
+.nav{
+    list-style-type: none;
+    grid-area: nv;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    justify-content: center;
+    background-color: rgb(16, 247, 255);
+    margin: auto;
+    width: 70%;
+}
+}
+.nav li{
+
+}
+.nav li a{
+    font-size: 0.7rem;
+    display: block;
+    padding: 1vw 3vw;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.nav li a:hover{
+    background-color: rgb(0, 57, 71);
+    color: rgb(255, 255, 255);
+}
+.featured{
+    grid-area: fd;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/car.jpg');
+}
+.content{
+    width: 92%;
+}
+.recent{
+    width: 90%;
+}
+.contentHead{
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 15px 0;
+}
+@media (min-width:800px){
+    .featured{
+        grid-area: fd;
+        padding: 30px 65px;
+        display: flex;
+        flex-direction: row;
+        background-image: url('images/dark_featured_bg.jpg');
+    }
+    .content{
+        width: 70%;
+    }
+    .recent{
+        width: 30%;
+    }
+    .contentHead{
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        font-weight: 600;
+        padding: 15px 0;
+    }
+}
+.card{
+    padding: 20px;
+    margin: 34px 13px;
+    color: rgb(212, 254, 255);
+    border: 1px solid yellow;
+    border-radius: 10px;
+}
+
+#post1{
+    background-image: url('images/tech2.jpg');
+}
+#post2{
+    background-image: url('images/tech3.jpg');
+}
+#post3{
+    background-image: url('images/tech4.jpg');
+}
+.postHeading{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(255, 248, 29);
+}
+.postContent{
+    font-family: Tahoma,'Segoe UI', Geneva, Verdana, sans-serif;
+    line-height: 36px;
+    font-size: 0.7rem;
+    color: white;
+}
+.post{
+    color: #37f8ff;
+    font-size: 0.65rem;
+    text-decoration: none;
+}
+.recentList{
+    padding: 34px 73px;
+    line-height: 54px;
+}
+.recentList li{
+    font-size: 0.75rem;
+}
+.footer{
+    grid-area: ft;
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 255, 255);
+    
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social div{
+    padding: 2vw 5vw;
+} 
+img{
+    height: 60px;
+}
+form{
+    padding: 25px;
+    margin: 10px;
+}
+input, textarea{
+    background-color: rgb(9, 63, 63);
+    color: white;
+    padding: 15px;
+    width: 50vw;
+    margin: 15px;
+}
+::placeholder{
+    color: white;
+    font-size: 0.7rem;
+}
+#submit{
+    width: auto;    
+}
+fieldset p{
+    text-align: right;
+    display: inline;
+}
+.ftext{
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 23px 0 35px;
+}
