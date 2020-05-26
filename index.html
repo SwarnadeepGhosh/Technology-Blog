@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technology Unrevealed</title>
-    <link rel="stylesheet" href="home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">-->
 </head>
 <body>
     <div class="mainGrid">
@@ -15,7 +15,7 @@
         </div>
         <div class='navContainer' id="navbar">
             <ul class="nav">
-                <li class="navitem" ><a href="#home">HOME</a></li>
+                <li class="navitem" ><a href="index.html">HOME</a></li>
                 <li class="navitem" ><a href="#about">ABOUT</a></li>
                 <li class="navitem" ><a href="#blogposts">BLOG POSTS</a></li>
                 <li class="navitem" ><a href="#archives">ARCHIVES</a></li>
@@ -28,49 +28,55 @@
                 <div class="card" id="post1">
                     <p class="postHeading">First Blog Post</p>
                     <p class='postContent'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus euismod quis viverra. Elementum pulvinar etiam non quam. Vulputate mi sit amet mauris commodo. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Iaculis nunc sed augue lacus viverra.</p>
-                    <a class='post' href="post.html">Continue Reading →</a>
+                    <a class='post' href="posts/first_post.html">Continue Reading →</a>
                 </div>
                 <div class="card" id="post2">
                     <p class="postHeading">Second Blog Post</p>
                     <p class='postContent'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus euismod quis viverra. Elementum pulvinar etiam non quam. Vulputate mi sit amet mauris commodo. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Iaculis nunc sed augue lacus viverra.</p>
-                    <a class='post' href="post.html">Continue Reading →</a>
+                    <a class='post' href="posts/second_post.html">Continue Reading →</a>
                 </div>
                 <div class="card" id="post3">
                     <p class="postHeading">Third Blog Post</p>
                     <p class='postContent'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus euismod quis viverra. Elementum pulvinar etiam non quam. Vulputate mi sit amet mauris commodo. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Iaculis nunc sed augue lacus viverra.</p>
-                    <a class='post' href="post.html">Continue Reading →</a>
+                    <a class='post' href="posts/third_post.html">Continue Reading →</a>
                 </div>
             </div>
             <div class="recent">
                 <p class="contentHead">Recent Posts</p>
                 <ul class="recentList">
-                    <li>First Blog Post</li>
-                    <li>Second Blog Post</li>
-                    <li>Third Blog Post</li>
+                    <li><a href="posts/first_post.html">First Blog Post</a></li>
+                    <li><a href="posts/second_post.html">Second Blog Post</a></li>
+                    <li><a href="posts/third_post.html">Third Blog Post</a></li>
                 </ul>
+                <figure>
+                    <img src="images/earth.jpg" alt="Earth">
+                    <figcaption>Earth Internet</figcaption>
+                  </figure>
             </div>
         </div>
         <div class="footer">
-            <div>
-                <form action="mailto:swarna.lyf@gmail.com" method="post" enctype="text/plain">
-                    <legend style="padding: 15px;">Contact Me</legend>
-                    <fieldset>
-                        <input type="text" name='name' id="name" placeholder="Your Name" required><br>
-                        <input type="email" name="email" id="email" placeholder="Your Email" required><br>
-                        <textarea name="message" id="message" cols="30" rows="4" placeholder="Your Message"></textarea><br>
-                        <input type="submit" class="button" id="submit" value='Send'>
-                        <p>Or simply mail me at: <i>swarna.lyf@gmail.com</i></p>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="social">
-                <div class="links" id="linkenin"><a href="https://www.linkedin.com/in/swarnadeepghosh"><img src="images/linkedin_logo.png" alt="LinkenIN"></a></div>
-                <div class="links" id="github"><a href="https://github.com/SwarnadeepGhosh"><img src="images/github_logo.png" alt="GitHub"></a></div>
-                <div class="links" id="fb"><a href="https://fb.com/swarnadeep.ghosh.10"><img src="images/fb_logo.png" alt="Facebook"></a></div>
-            </div>
-            <div class="ftext">Made with ❤ from Swarnadeep</div>
+            <footer>
+                <div>
+                    <form action="mailto:swarna.lyf@gmail.com" method="post" enctype="text/plain">
+                        <legend><h3>Contact Me</h3></legend>
+                        <fieldset>
+                            <input type="text" name='name' id="name" placeholder="Your Name" required><br>
+                            <input type="email" name="email" id="email" placeholder="Your Email" required><br>
+                            <textarea name="message" id="message" cols="30" rows="4" placeholder="Your Message"></textarea><br>
+                            <input type="submit" class="button" id="submit" value='Send'>
+                            <p>Or simply mail me at: <u><i>swarna.lyf@gmail.com</i></u></p>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="social">
+                    <div class="links" id="linkenin"><a href="https://www.linkedin.com/in/swarnadeepghosh"><img src="images/linkedin_logo.png" alt="LinkenIN"></a></div>
+                    <div class="links" id="github"><a href="https://github.com/SwarnadeepGhosh"><img src="images/github_logo.png" alt="GitHub"></a></div>
+                    <div class="links" id="fb"><a href="https://fb.com/swarnadeep.ghosh.10"><img src="images/fb_logo.png" alt="Facebook"></a></div>
+                </div>
+                <div class="ftext">Made with ❤ from <b>Swarnadeep</b></div>
+            </footer>
         </div>
     </div>
-    <script src="js.js"></script>
+    <script src="scroll.js"></script>
 </body>
 </html>
