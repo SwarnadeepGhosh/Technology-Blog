@@ -1,0 +1,26 @@
+.header{
+    grid-area: hd;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: linear-gradient(rgba(3, 1, 119, 0.5), rgba(99, 0, 91, 0.5)),url('../images/home_bg.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    color: white;
+    position: relative;
+}
+.title{
+    margin: 50px 0 -6px;
+    padding: 10px 0;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #fffb28;
+    letter-spacing: 0.4vw;
+}
+.subtitle{
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    margin: 3vh 0 46px;
+    overflow: hidden;
+}

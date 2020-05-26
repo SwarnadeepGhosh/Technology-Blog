@@ -1,0 +1,45 @@
+.footer{
+    grid-area: ft;
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 255, 255);
+}
+legend{
+    padding: 15px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social div{
+    padding: 2vw 5vw;
+} 
+img{
+    height: 60px;
+}
+form{
+    padding: 25px;
+    margin: 10px;
+}
+input, textarea{
+    background-color: rgb(9, 63, 63);
+    color: white;
+    padding: 15px;
+    width: 50vw;
+    margin: 15px;
+}
+::placeholder{
+    color: white;
+    font-size: 0.7rem;
+}
+#submit{
+    width: auto;    
+}
+fieldset p{
+    text-align: right;
+    display: inline;
+}
+.ftext{
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 23px 0 35px;
+}
